@@ -13,7 +13,7 @@ char *READ_LINE(void)
 
 	if (isatty(STDIN_FILENO))
 	{
-		write(STDOUT_FILENO, "(sell)$ ", 8);
+		write(STDOUT_FILENO, "(shell)$ ", 8);
 	}
 	nline = getline(&line, &len, stdin);
 	if (nline == -1)
